@@ -3,6 +3,6 @@ Simple LESS Framework
 
 Heavily influenced from Twitters Bootstrap
 
-# Usage
+## Usage
 
 Start with src/variables.less
