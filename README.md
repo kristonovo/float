@@ -1,7 +1,7 @@
 # Float
 Simple LESS Framework
 
-Heavily influenced from Twitters Bootstrap
+Heavily influenced by Twitters Bootstrap
 
 ## Usage
 
