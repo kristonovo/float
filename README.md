@@ -24,7 +24,7 @@ If you want to center your page horizontally you can use the page-wrap class.
 
 ### Grid
 
-The Grid is a simple 4 column-based setup. You can combine different classes to adjust your layout. Keep in mind that all columns (except number 4) is using adjustable margin-right values.
+The Grid is a simple 4-column-based setup. You can combine different classes to adjust your layout. Keep in mind that all columns (except number 4) are using margin-right values.
 
 ***
 
