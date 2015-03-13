@@ -65,3 +65,13 @@ The Grid is a simple 4-column-based setup. You can combine different classes to 
 ```
 
     <div class="col-1-3">...</div><div class="col-4">...</div>
+
+***
+
+#### .col-1-4 ( @todo: this should be .row )
+
+```    
+| 1 - 4 |     
+```
+
+    <div class="col-1-4">...</div>
