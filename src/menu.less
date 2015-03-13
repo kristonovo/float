@@ -1,22 +1,40 @@
-.menu-container {
-  background: @menu-container-background;
-  overflow: auto;
-}
-
 .menu {
-  margin: 0;
+  margin: 40px 0 0 0;
   padding: 0;
   list-style: none;
   overflow: auto;
 }
 
 .menu-item {
-  float: left;
+  float: @menu-item-float;
+  border-top: @menu-item-border-top;
+  width: @menu-width;
+}
+
+
+.menu-item-last {
+  border-bottom: @menu-item-border-top;
 }
 
 .menu-link {
   display: block;
-  padding: 10px;
-  color: #fff;
+  padding: 0 0 0 @menu-link-padding-left;
+  line-height: @menu-link-line-height;
+  color: @gray;
   text-decoration: none;
+  text-transform: @menu-link-transform;
+  width: @menu-width - @menu-link-padding-left;
+  height: @menu-link-line-height;
+  background: @menu-link-background;
+  transition: all 0.2s;
+}
+
+.menu-link-active {
+  color: @primary;
+  background-position: bottom right;
+}
+
+.menu-link:hover {
+  color: @primary;
+  background-position: bottom right;
 }

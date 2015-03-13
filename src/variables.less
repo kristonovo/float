@@ -1,25 +1,57 @@
 // customise this file
 
+// colors
+@primary: #ed9720;
+@gray: #7f7f7f;
+@gray-light: #dddddd;
+@blue-light: #6bbdea;
+
+// main font: @body-font-family
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+// headline font: @headline-font-family
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
 // body
 @body-margin: 0;
 @body-padding: 0;
-@body-background: url('/img/bg.jpg') top center no-repeat;
+@body-background: #fff; // other example could be: url('/img/bg.jpg') top center no-repeat;
+@body-font-size: 15px;
+@body-line-height: 25px;
+@body-font-family: 'Open Sans', sans-serif;
 
 // page
 @page-wrap-width: 960px;
 @page-wrap-margin: 20px auto 0 auto;
 
+// grid
+@column-width: 210px;
+@column-margin-right: 40px;
+
 // menu
 @menu-container-background: url('/img/white-25.png');
+@menu-width: @column-width * 2 + @column-margin-right;
+@menu-item-float: none;
+@menu-item-border-top: 2px solid @gray-light;
+@menu-link-transform: uppercase;
+@menu-link-width: @menu-width;
+@menu-link-line-height: 50px;
+@menu-link-padding-left: 10px;
+@menu-link-background: url('/img/arrows.png') top right no-repeat;
 
-// grid
-@column-width: 225px;
-@column-margin-right: 20px;
+// headings
+@headings-font-family: 'Droid Serif', serif;
+@headings-font-weight: normal;
 
-// typography
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@font-family-body: 'Open Sans', sans-serif;
-@font-size-body: 14px;
-@line-height-body: 22px;
+@h1-font-size: 50px;
+@h2-font-size: 40px;
+@h3-font-size: 30px;
+@h4-font-size: 20px;
+@h5-font-size: 15px;
+@h6-font-size: 10px;
 
-@font-size-h1: 22px;
+@h1-margin: 50px 0;
+@h2-margin: 45px 0;
+@h3-margin: 40px 0;
+@h4-margin: 20px 0;
+@h5-margin: 10px 0;
+@h6-margin: 5px 0;
