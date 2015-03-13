@@ -10,7 +10,9 @@ Start customising **src/variables.less**
 
 ### Page
 
-.page-wrap
+If you want to center your page horizontally you can use the page-wrap class.
+
+#### .page-wrap
 
     <body>
         <div class="page-wrap">
@@ -22,11 +24,11 @@ Start customising **src/variables.less**
 
 ### Grid
 
-The Grid is a simple 4 column-based setup. You can combine different classes to adjust your layout.
+The Grid is a simple 4 column-based setup. You can combine different classes to adjust your layout. Keep in mind that all columns (except number 4) is using adjustable margin-right values.
 
 ***
 
-### .col-1, .col-2, .col-3, .col-4 
+#### .col-1, .col-2, .col-3, .col-4 
 
 ```    
 | 1 | 2 | 3 | 4 |     
@@ -36,7 +38,7 @@ The Grid is a simple 4 column-based setup. You can combine different classes to 
   
 *** 
 
-### .col-1-2, .col-3-4
+#### .col-1-2, .col-3-4
 
 ```    
 | 1 - 2 | 3 - 4 |     
@@ -46,7 +48,7 @@ The Grid is a simple 4 column-based setup. You can combine different classes to 
 
 ***
 
-### .col-1, .col-2-4
+#### .col-1, .col-2-4
 
 ```    
 | 1 | 2 - 4 |     
@@ -56,7 +58,7 @@ The Grid is a simple 4 column-based setup. You can combine different classes to 
 
 ***
 
-### .col-1-3, .col-4 
+#### .col-1-3, .col-4 
 
 ```    
 | 1 - 3 | 4 |     
