@@ -3,10 +3,19 @@
   padding: 5px 20px;
   color: #fff;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: background-color 0.2s;
   margin: 10px 0;
+  border: 0;
+  border-radius: @border-radius-base;
+  font-size: @body-font-size;
+  line-height: 25px;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
   background-color: @primary - 20%;
+}
+
+.btn-primary:focus {
+  outline: none;
 }

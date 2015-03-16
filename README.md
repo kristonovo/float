@@ -1,10 +1,10 @@
 # Float
 **UNDER DEVELOPMENT**
-> Float is a simple CSS framework (based on LESS). It's heavily influenced by Twitters Bootstrap. The goal is to develop a more lightweight framework which is highly compatible with various browser-versions.
+> Float is a simple CSS framework (based on LESS). It's heavily influenced by Twitters Bootstrap. The goal is to develop a more lightweight framework which is responsive and still highly compatible with older browser-versions.
 
 ## Usage
 
-Start customising **src/variables.less**
+Start customising **variables.less**
 
 ***
 
