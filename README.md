@@ -35,7 +35,7 @@ The Grid is a simple 4-column-based setup. You can combine different classes to 
 ```
 
 ```html
-<div class="col-1">...</div><div class="col-2">...</div><div class="col-3">...</div><div class="col-4">...</div>
+<div class="col-1">1</div><div class="col-2">2</div><div class="col-3">3</div><div class="col-4">4</div>
 ```
 
 *** 
@@ -47,7 +47,7 @@ The Grid is a simple 4-column-based setup. You can combine different classes to 
 ```
 
 ```html
-<div class="col-1-2">...</div><div class="col-3-4">...</div>
+<div class="col-1-2">1-2</div><div class="col-3-4">3-4</div>
 ```
 
 ***
@@ -59,7 +59,7 @@ The Grid is a simple 4-column-based setup. You can combine different classes to 
 ```
 
 ```html
-<div class="col-1">...</div><div class="col-2-4">...</div>
+<div class="col-1">1</div><div class="col-2-4">2-4</div>
 ```
 
 ***
@@ -71,7 +71,7 @@ The Grid is a simple 4-column-based setup. You can combine different classes to 
 ```
 
 ```html
-<div class="col-1-3">...</div><div class="col-4">...</div>
+<div class="col-1-3">1-3</div><div class="col-4">4</div>
 ```
 
 ***
@@ -83,5 +83,5 @@ The Grid is a simple 4-column-based setup. You can combine different classes to 
 ```
 
 ```html
-<div class="col-1-4">...</div>
+<div class="col-1-4">1-4</div>
 ```
