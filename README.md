@@ -13,13 +13,13 @@ Start customising **variables.less**
 If you want to center your page horizontally you can use the page-wrap class.
 
 #### .page-wrap
-
-    <body>
-        <div class="page-wrap">
-            ...
-        </div>
-    </body>
-    
+```html
+<body>
+    <div class="page-wrap">
+        ...
+    </div>
+</body>
+```
 ***
 
 ### Grid
@@ -64,7 +64,9 @@ The Grid is a simple 4-column-based setup. You can combine different classes to 
 | 1 - 3 | 4 |     
 ```
 
-    <div class="col-1-3">...</div><div class="col-4">...</div>
+```html
+<div class="col-1-3">...</div><div class="col-4">...</div>
+```
 
 ***
 
@@ -74,4 +76,6 @@ The Grid is a simple 4-column-based setup. You can combine different classes to 
 | 1 - 4 |     
 ```
 
-    <div class="col-1-4">...</div>
+```html
+<div class="col-1-4">...</div>
+```
