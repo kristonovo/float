@@ -1,7 +1,5 @@
-.btn-primary {
-  background-color: @primary;
+.btn {
   padding: 5px 20px;
-  color: #fff;
   text-decoration: none;
   transition: background-color 0.2s;
   margin: 10px 0;
@@ -12,10 +10,30 @@
   cursor: pointer;
 }
 
+.btn-primary {
+  .btn;
+  background-color: @primary;
+  color: #fff;
+}
+
 .btn-primary:hover {
   background-color: @primary - 20%;
 }
 
-.btn-primary:focus {
+.btn-success {
+  .btn;
+  background-color: @success;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: @success - 20%;
+}
+
+.btn-primary:focus, .btn-success {
   outline: none;
+}
+
+.btn-success {
+
 }
