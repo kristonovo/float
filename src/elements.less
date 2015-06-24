@@ -10,7 +10,7 @@ body {
   font-size: @body-font-size;
   line-height: @body-line-height;
   background: @body-background;
-  color: @gray;
+  color: @body-font-color;
 }
 
 h1 {
@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: @headings-font-weight;
 }
 
-img, fieldset {
+img, fieldset, a {
   border: none;
+}
+
+a {
+  outline: none;
 }

@@ -1,39 +1,48 @@
 // customise this file
 
 // colors
-@primary: #ed9720;
+@primary: #f29b46;
 @success: #67b143;
-@gray: #666666;
+@gray: #333333;
 @link: #0099cc;
-@gray-light: #dddddd;
-@gray-bright: #efefef;
+@gray-light: #cccccc;
+@gray-bright: #eeeeee;
 @gray-white: #fcfcfc;
 @blue-light: #6bbdea;
 @alert-red: #ffa7a7;
+@brand-primary: darken(#f29b46, 6.5%);
+@brand-success: #5cb85c;
+@brand-info: #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger: #d9534f;
 
 // main font: @body-font-family
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 // headline font: @headings-font-family
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300200);
 
 // body
+@body-font-color: @gray;
 @body-margin: 0;
 @body-padding: 0;
 @body-background: @gray-white; // other example could be: url('/img/bg.jpg') top center no-repeat;
-@body-font-size: 15px;
+@body-font-size: 14px;
 @body-line-height: 25px;
 @body-font-family: 'Open Sans', sans-serif;
 
 // page
-@page-wrap-width: 960px;
-@page-wrap-margin: 40px auto 60px auto;
+@page-wrap-width: 996px;
+@page-wrap-margin: 0 auto 60px auto;
+@page-full-height: 80px;
+@page-full-line-height: 80px;
 
 // grid
-@column-width: 210px;
-@column-margin-right: 40px;
+@column-width: 107px;
+@column-margin-right: 20px;
 
 // border-radius
-@border-radius-base: 4px;
+@border-radius-base: 2px;
+@border-radius-small: 1px;
 
 // menu
 @menu-container-background: url('/img/white-25.png');
@@ -51,9 +60,9 @@
 @headings-font-weight: 600;
 
 @h1-font-size: 50px;
-@h2-font-size: 40px;
-@h3-font-size: 30px;
-@h4-font-size: 20px;
+@h2-font-size: 30px;
+@h3-font-size: 25px;
+@h4-font-size: 18px;
 @h5-font-size: 16px;
 @h6-font-size: 10px;
 
@@ -65,7 +74,7 @@
 @h6-margin: 5px 0;
 
 @h1-line-height: 50px;
-@h2-line-height: 45px;
+@h2-line-height: 38px;
 @h3-line-height: 30px;
 @h4-line-height: 26px;
 @h5-line-height: 10px;
@@ -74,6 +83,9 @@
 // panel
 @panel-padding: 10px 30px;
 @panel-margin: 20px 0;
+
+// screen
+@screen-padding: 40px 50px;
 
 // form
 @form-width: 450px;
