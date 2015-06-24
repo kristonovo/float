@@ -24,7 +24,7 @@ If you want to center your page horizontally you can use the page-wrap class.
 
 ### Grid
 
-The Grid is a simple 8-column-based setup. You can combine different classes to adjust your layout.
+The Grid is a simple 8-column-based setup. You can combine different classes to adjust your layout. Use ```.col-last``` for end column.
 
 ***
 
@@ -45,7 +45,7 @@ The Grid is a simple 8-column-based setup. You can combine different classes to 
 ```
 
 ```html
-<div class="col-2">{{ 2 }}</div><div class="col-4">{{ 4 }}</div><div class="col-2">{{ 2 }}</div>
+<div class="col-2">{{ 2 }}</div><div class="col-4">{{ 4 }}</div><div class="col-2 col-last">{{ 2 }}</div>
 ```
 
 ***
