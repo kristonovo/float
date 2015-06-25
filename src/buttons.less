@@ -11,6 +11,7 @@
   line-height: @button-line-height;
   cursor: pointer;
   color: @body-font-color;
+  outline: none;
 }
 
 .btn:hover, .btn:focus {
@@ -91,6 +92,8 @@
   text-align: center;
 }
 
+.btn-container { position: relative; }
+
 .dropdown-toggle {
   text-align: center;
   .one-line-shortened;
@@ -99,3 +102,5 @@
 .dropdown-toggle:hover > ul {
   visibility: visible; opacity: 1;
 }
+
+.btn-passive:active { box-shadow: none; }
