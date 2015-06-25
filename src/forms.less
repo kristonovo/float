@@ -10,10 +10,16 @@
   margin: @input-margin;
   transition: border 0.5s;
   float: left;
+  .one-line-shortened;
 }
 
 .form-input:focus, .form-textarea:focus, .form-select:focus {
   outline: 0;
+}
+
+.form-input-2 {
+  .form-input;
+  width: (@column-width * 2) + @column-margin-right - (2 * @input-border-strength) - (2 * @input-padding-lr) - (2 * @column-margin-right);
 }
 
 .form-label {

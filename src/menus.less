@@ -42,7 +42,7 @@
 .menu-vertical {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 @column-margin-right 0;
 }
 
 .dropdown-menu {
@@ -53,17 +53,19 @@
   left: 0;
   list-style: none;
   padding: 2px 0 0 0;
-  margin: @button-height + (2 * (@button-padding-tb + @button-border-strength)) 0 0 0;
-  width: @column-width * 2;
+  margin: @button-height + (2 * (@button-padding-tb + @button-border-strength)) 0 @column-margin-right 0;
+  width: (@column-width * 2) + @column-margin-right;
 }
 
 .menu-vertical-item {}
 
 .menu-vertical-link {
-  padding: 10px 16px;
+  height: @button-height;
+  line-height: @button-line-height;
+  padding: @button-padding;
   background-color: @button-bg-color;
   transition: background-color 0.2s;
-  width: @column-width * 2 + @column-margin-right - 34px;
+  width: @column-width * 2 + @column-margin-right - (2 * @button-padding-lr) - (2 * @button-border-strength);
   display: block;
   color: @body-font-color;
   border-top: 1px solid @gray-light;
@@ -72,6 +74,7 @@
   border-bottom: 0;
   border-radius: 0;
   text-align: left;
+  .one-line-shortened;
 }
 
 .menu-vertical-link:hover, .menu-vertical-link:focus {

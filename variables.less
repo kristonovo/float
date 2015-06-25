@@ -24,7 +24,7 @@
 // body
 @body-font-color: @gray;
 @body-margin: 0;
-@body-padding: 0;
+@body-padding: (@page-full-height + @column-margin-right) 0 0 0;
 @body-background: @gray-white; // other example could be: url('/img/bg.jpg') top center no-repeat;
 @body-font-size: 14px;
 @body-line-height: 25px;
@@ -32,7 +32,7 @@
 
 // page
 @page-wrap-width: 996px;
-@page-wrap-margin: 0 auto 60px auto;
+@page-wrap-margin: 0 auto @column-margin-right auto;
 @page-wrap-padding: 0 20px;
 @page-full-height: 80px;
 @page-full-line-height: 80px;
@@ -52,7 +52,9 @@
 @button-bg-color: #fff;
 @button-padding: 6px 12px;
 @button-padding-tb: 6px;
+@button-padding-lr: 12px;
 @button-height: 20px; // + padding + border
+@button-height-border: 34px; // + padding + border
 @button-margin: 0;
 @button-border: 1px solid @gray-light;
 @button-border-strength: 1px;
@@ -96,7 +98,7 @@
 
 // panel
 @panel-padding: 0;
-@panel-margin: 20px 0;
+@panel-margin: 0 0 @column-margin-right 0;
 @panel-border: 1px solid @gray-light;
 @panel-bg-color: #fff;
 @panel-border-strength: 1px;
@@ -114,10 +116,12 @@
 // form
 @form-width: 450px;
 @input-padding: 6px 10px;
+@input-padding-lr: 10px;
 @input-border: 1px solid @gray-light;
+@input-border-strength: 1px;
 @input-width: @form-width;
 @input-height: 20px;
-@input-margin: 0;
+@input-margin: 0 0 (@column-margin-right / 2) 0;
 @label-margin: 4px 0 0 0;
 
 // typo
