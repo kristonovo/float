@@ -9,7 +9,7 @@
 @gray-bright: #eeeeee;
 @gray-white: #fcfcfc;
 @blue-light: #6bbdea;
-@alert-red: #ffa7a7;
+@alert-red: #f2dede;
 @brand-primary: darken(#f29b46, 6.5%);
 @brand-success: #5cb85c;
 @brand-info: #5bc0de;
@@ -33,6 +33,7 @@
 // page
 @page-wrap-width: 996px;
 @page-wrap-margin: 0 auto 60px auto;
+@page-wrap-padding: 0 20px;
 @page-full-height: 80px;
 @page-full-line-height: 80px;
 
@@ -40,9 +41,22 @@
 @column-width: 107px;
 @column-margin-right: 20px;
 
+@column-width-md: 82px;
+@column-margin-right-md: 16px;
+
 // border-radius
 @border-radius-base: 2px;
 @border-radius-small: 1px;
+
+// buttons
+@button-bg-color: #fff;
+@button-padding: 6px 12px;
+@button-padding-tb: 6px;
+@button-height: 20px; // + padding + border
+@button-margin: 0;
+@button-border: 1px solid @gray-light;
+@button-border-strength: 1px;
+@button-line-height: 20px;
 
 // menu
 @menu-container-background: url('/img/white-25.png');
@@ -81,20 +95,40 @@
 @h6-line-height: 5px;
 
 // panel
-@panel-padding: 10px 30px;
+@panel-padding: 0;
 @panel-margin: 20px 0;
+@panel-border: 1px solid @gray-light;
+@panel-bg-color: #fff;
+@panel-border-strength: 1px;
+
+@panel-heading-padding: 10px 20px;
+@panel-heading-border-bottom: 1px solid darken(@panel-bg-color, 10%);
+@panel-heading-bg-color: darken(@panel-bg-color, 5%);
+@panel-heading-line-height: 20px;
+
+@panel-body-padding: 20px;
 
 // screen
 @screen-padding: 40px 50px;
 
 // form
 @form-width: 450px;
-@input-padding: 10px 15px;
+@input-padding: 6px 10px;
+@input-border: 1px solid @gray-light;
 @input-width: @form-width;
-@input-margin: 5px 0;
-@label-margin: 15px 0 0 0;
+@input-height: 20px;
+@input-margin: 0;
+@label-margin: 4px 0 0 0;
 
 // typo
 @side-note-color: @gray + 60%;
 @side-note-font-size: 14px;
 @side-note-font-weight: normal;
+
+// glyphicons
+//** Load fonts from this directory.
+@icon-font-path:          "../../fonts/";
+//** File name for all font files.
+@icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id:        "glyphicons_halflingsregular";

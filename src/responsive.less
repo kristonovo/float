@@ -1,0 +1,19 @@
+@media screen and (max-width: 1035px) {
+  .page-wrap { width: 768px; box-sizing: border-box; }
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8 { margin-right: 16px; }
+  .col-1 { width: @column-width-md; }
+  .col-2 { width: @column-width-md * 2 + @column-margin-right-md; }
+  .col-3 { width: @column-width-md * 3 + (2 * @column-margin-right-md); }
+  .col-4 { width: @column-width-md * 4 + (3 * @column-margin-right-md); }
+  .col-5 { width: @column-width-md * 5 + (4 * @column-margin-right-md); }
+  .col-6 { width: @column-width-md * 6 + (5 * @column-margin-right-md); }
+  .col-7 { width: @column-width-md * 7 + (6 * @column-margin-right-md); }
+  .col-8 { width: @column-width-md * 8; }
+  .menu-vertical-link { width: @column-width-md * 2 - 18; }
+  .sidebar { margin-top: @column-margin-right-md; margin-bottom: @column-margin-right-md; }
+}
+
+@media screen and (max-width: 767px) {
+  .page-wrap { width: 100%; }
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .menu-vertical-link, .dropdown-menu { width: 100%; box-sizing: border-box; }
+}

@@ -1,12 +1,14 @@
 .btn {
-  padding: 6px 12px;
+  padding: @button-padding;
+  height: @button-height;
   text-decoration: none;
+  background-color: @button-bg-color;
   transition: background-color 0.2s;
-  margin: 10px 0;
-  border: 1px solid @gray-light;
+  margin: @button-margin;
+  border: @button-border;
   border-radius: @border-radius-base;
   font-size: @body-font-size;
-  line-height: 20px;
+  line-height: @button-line-height;
   cursor: pointer;
   color: @body-font-color;
 }
@@ -42,7 +44,6 @@
 
 .btn-block {
   display: block;
-  width: 100%;
 }
 
 .btn-success {
@@ -70,4 +71,27 @@
 
 .btn-danger:hover {
   background-color: @alert-red - 20%;
+}
+
+.btn-side-note {
+  margin-left: 20px;
+}
+
+.btn-submit {
+  height: @button-height + ((@button-padding-tb + @button-border-strength) * 2);
+}
+
+.btn-icon {
+  width: @button-height;
+  height: @button-height;
+  padding: @button-padding-tb;
+  display: block;
+  float: left;
+  margin: @button-margin;
+}
+
+.dropdown-toggle {}
+
+.dropdown-toggle:hover > ul {
+  visibility: visible; opacity: 1;
 }
