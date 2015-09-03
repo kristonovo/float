@@ -67,11 +67,16 @@
 
 .btn-danger {
   background-color: @alert-red;
-  color: @alert-red - 75%;
+  color: saturate((@alert-red - 75%), 20%);
+  border-color: saturate((@alert-red - 25%), 20%);
 }
 
 .btn-danger:hover {
   background-color: @alert-red - 20%;
+}
+
+.btn-danger:active {
+  box-shadow: 0 3px 4px 0 (@alert-red - 40%) inset;
 }
 
 .btn-side-note {
