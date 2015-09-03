@@ -39,6 +39,19 @@
   display: block;
 }
 
+.form-textarea {
+  border-radius: @border-radius-base;
+  border: @input-border;
+  padding: @input-padding ;
+  width: (@column-width * 4) + @column-margin-right - (2 * @input-border-strength) - (2 * @input-padding-lr);
+  height: @textarea-height;
+  font-family: @body-font-family;
+  font-size: @body-font-size;
+  color: @gray;
+  margin: @input-margin;
+  transition: border 0.5s;
+}
+
 .disabled {
   background-color: @gray + 75%;
 }

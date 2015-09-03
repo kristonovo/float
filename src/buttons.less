@@ -23,7 +23,6 @@
 }
 
 .btn-primary {
-  .btn;
   background-color: @primary;
   color: #fff;
   border-color: darken(@primary, 5%);
@@ -48,26 +47,26 @@
 }
 
 .btn-success {
-  .btn;
   background-color: @success;
   color: #fff;
+  border-color: saturate((@success - 25%), 20%);;
 }
 
 .btn-success:hover {
   background-color: @success - 20%;
 }
 
-.btn-primary:focus, .btn-success {
-  outline: none;
+.btn-success:active {
+  box-shadow: 0 3px 4px 0 (@success - 40%) inset;
 }
 
-.btn-success {
-
+.btn-primary:focus, .btn-success, .btn-danger {
+  outline: none;
 }
 
 .btn-danger {
   background-color: @alert-red;
-  color: saturate((@alert-red - 75%), 20%);
+  color: saturate((@alert-red - 85%), 20%);
   border-color: saturate((@alert-red - 25%), 20%);
 }
 
@@ -97,7 +96,7 @@
   text-align: center;
 }
 
-.btn-container { position: relative; }
+.btn-container { position: relative; margin-bottom: 12px; }
 
 .dropdown-toggle {
   text-align: center;
@@ -109,3 +108,5 @@
 }
 
 .btn-passive:active { box-shadow: none; }
+
+.btn-inline { margin-right: 12px; margin-bottom: 12px; }
