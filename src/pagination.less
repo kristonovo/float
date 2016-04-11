@@ -1,23 +1,53 @@
-.pagination {
+.pager {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+ul.pagination {
+  padding: 0;
+  margin: 0 0 20px 0;
+  list-style: none;
   float: right;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 0 solid @primary;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
   li {
     float: left;
+    border: 0 solid darken(@primary, 5%);
+    border-top-width: 1px;
+    border-right-width: 1px;
     a, span {
       display: block;
       padding: 5px 15px;
+      background-color: @primary;
     }
     a {
       text-decoration: none;
-      color: @link;
+      color: #fff;
       transition: background-color 0.2s;
     }
     a:hover {
-      background-color: @link;
+      background-color: darken(@primary, 5%);
       color: #fff;
     }
+    a:active {
+      box-shadow: 0 3px 4px 0 darken(@primary, 15%) inset;
+    }
   }
-  overflow: auto;
+  li.active {
+    border-color: #fff;
+    a {
+      background-color: #fff;
+      color: @gray;
+    }
+    a:hover {
+      background-color: @gray-light + 25%;
+    }
+    a:active {
+      box-shadow: 0 3px 4px 0 @gray-light inset;
+    }
+  }
 }
