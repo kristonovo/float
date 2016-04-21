@@ -19,7 +19,7 @@
 }
 
 .btn:active {
-  box-shadow: 0 3px 4px 0 @gray-light inset;
+  box-shadow: 1px 3px 6px 0 darken(@gray-light, 5%) inset;
 }
 
 .btn-primary {
@@ -122,9 +122,10 @@
 .btn-inline { margin-right: 12px; margin-bottom: 12px; }
 
 .btn-off {
-  background-color: #ccc;
+  background-color: darken(@gray-light, 5%);
   cursor: default;
   color: #999;
+  border-color: darken(@gray-light, 5%);
 }
 
 .btn-off:hover, .btn-off:focus, .btn-off:active {
