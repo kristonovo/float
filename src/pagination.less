@@ -11,14 +11,10 @@ ul.pagination {
   float: right;
   overflow: hidden;
   border-radius: 2px;
-  border: 0 solid @primary;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
+  border: 0;
   li {
     float: left;
-    border: 0 solid darken(@primary, 5%);
-    border-top-width: 1px;
-    border-right-width: 1px;
+    border: 0;
     a, span {
       display: block;
       padding: 5px 15px;
@@ -30,15 +26,14 @@ ul.pagination {
       transition: background-color 0.2s;
     }
     a:hover {
-      background-color: darken(@primary, 5%);
+      background-color: @primary - 10%;
       color: #fff;
     }
     a:active {
-      box-shadow: 0 3px 4px 0 darken(@primary, 15%) inset;
+      background-color: @primary + 20%;
     }
   }
   li.active {
-    border-color: #fff;
     a {
       background-color: #fff;
       color: @gray;
@@ -47,7 +42,7 @@ ul.pagination {
       background-color: @gray-light + 25%;
     }
     a:active {
-      box-shadow: 0 3px 4px 0 @gray-light inset;
+      background-color: #fff;
     }
   }
 }

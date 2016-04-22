@@ -69,6 +69,8 @@
   border-bottom: @panel-heading-border-bottom;
   border-top-left-radius: @border-radius-base;
   border-top-right-radius: @border-radius-base;
+  height: @panel-heading-line-height;
+  line-height: @panel-heading-line-height;
 }
 
 .menu-vertical-link {
@@ -79,6 +81,7 @@
   width: @column-width * 2 + @column-margin-right - (2 * @button-padding-lr);
   display: block;
   color: @body-font-color;
+  line-height: @panel-heading-line-height;
   border-top: 1px solid @gray-light;
   border-left: 0;
   border-right: 0;
@@ -93,7 +96,8 @@
 }
 
 .menu-vertical-link:active {
-  box-shadow: 0 3px 4px 0 @gray-light inset;
+  background-color: #fff;
+  // box-shadow: 0 3px 4px 0 @gray-light inset;
 }
 
 .menu-vertical-link-last {
