@@ -51,12 +51,12 @@
 @button-padding: 6px 12px;
 @button-padding-tb: 6px;
 @button-padding-lr: 12px;
-@button-height: 24px; // + padding + border
-@button-height-border: 34px; // + padding + border
+@button-height: 22px; // + padding + border
+@button-line-height: 22px;
+@button-height-border: 36px; // + padding + border
 @button-margin: 0;
 @button-border: 1px solid #D4D4D4; // 1px solid @gray-light;
 @button-border-strength: 1px;
-@button-line-height: 22px;
 
 // menu
 @menu-container-background: url('/img/white-25.png');
@@ -120,7 +120,8 @@
 @input-border-strength: 1px;
 @input-width: @form-width;
 @input-width-small: @form-width - 275px;
-@input-height: 20px;
+@input-height: @button-height;
+@input-line-height: @button-line-height;
 @input-margin: 0 0 (@column-margin-right / 2) 0;
 @label-margin: 4px 0 0 0;
 @textarea-height: 42px;
