@@ -4,55 +4,56 @@
   padding: @container-padding;
 }
 
-.col-1 {
-  width: @column-width;
+.container-md {
+  width: @container-md-width;
+  margin: @container-md-margin;
+  padding: @container-md-padding;
 }
 
-.col-2 {
-  width: @column-width * 2 + @column-margin-right;
+.container-sm {
+  width: @container-sm-width;
+  margin: @container-sm-margin;
+  padding: @container-sm-padding;
 }
 
-.col-3 {
-  width: @column-width * 3 + (2*@column-margin-right);
+.cols(8);
+
+.cols(@n, @i: 1) when (@i =< @n) {
+
+  .col-@{i} {
+    width: @column-width * @i + (@column-margin-right * (@i - 1));
+    float: left;
+    margin-right: @column-margin-right;
+  }
+  .col-offset-@{i} {
+    margin-left: @i * (@column-width + @column-margin-right);
+  }
+
+  .col-md-@{i} {
+    width: @column-md-width * @i + (@column-md-margin-right * (@i - 1));
+    float: left;
+    margin-right: @column-md-margin-right;
+  }
+  .col-md-offset-@{i} {
+    margin-left: @i * (@column-md-width + @column-md-margin-right);
+  }
+
+  .col-sm-@{i} {
+    width: @column-sm-width * @i + (@column-sm-margin-right * (@i - 1));
+    float: left;
+    margin-right: @column-sm-margin-right;
+  }
+  .col-sm-offset-@{i} {
+    margin-left: @i * (@column-sm-width + @column-sm-margin-right);
+  }
+
+  .cols(@n, (@i + 1));
 }
 
-.col-4 {
-  width: @column-width * 4 + (3*@column-margin-right);
-}
-
-.col-5 {
-  width: @column-width * 5 + (4*@column-margin-right);
-}
-
-.col-6 {
-  width: @column-width * 6 + (5*@column-margin-right);
-}
-
-.col-7 {
-  width: @column-width * 7 + (6*@column-margin-right);
-}
-
-.col-8 {
-  width: @column-width * 8 + (7*@column-margin-right);
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7 {
-  float: left;
-  margin-right: @column-margin-right;
-}
-
-.col-8, .col-last {
+.col-8, .col-md-8, .col-sm-8, .col-last {
   float: left;
   margin-right: 0;
 }
-
-.col-offset-1 { margin-left: @column-width + @column-margin-right; }
-.col-offset-2 { margin-left: 2 * (@column-width + @column-margin-right); }
-.col-offset-3 { margin-left: 3 * (@column-width + @column-margin-right); }
-.col-offset-4 { margin-left: 4 * (@column-width + @column-margin-right); }
-.col-offset-5 { margin-left: 5 * (@column-width + @column-margin-right); }
-.col-offset-6 { margin-left: 6 * (@column-width + @column-margin-right); }
-.col-offset-7 { margin-left: 7 * (@column-width + @column-margin-right); }
 
 .clear-fix {
   clear: both;
