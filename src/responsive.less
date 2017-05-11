@@ -1,9 +1,5 @@
 @media screen and (max-width: 1035px) {
-
-  body { padding: @page-full-height 0 0 0; }
-
-  .page-wrap { width: 768px; padding: 0 @column-margin-right-md; }
-
+  .container { width: 768px; padding: 0 @column-margin-right-md; }
   .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8 { margin-right: @column-margin-right-md; }
   .col-last { margin-right: 0; }
   .col-1 { width: @column-width-md; }
@@ -21,46 +17,9 @@
   .col-offset-5 { margin-left: 5 * (@column-width-md + @column-margin-right-md); }
   .col-offset-6 { margin-left: 6 * (@column-width-md + @column-margin-right-md); }
   .col-offset-7 { margin-left: 7 * (@column-width-md + @column-margin-right-md); }
-
-  .menu-vertical { margin: 0 0 @column-margin-right-md 0; }
-  .menu-vertical-link { width: @column-width-md * 2 + @column-margin-right-md - (2 * @button-padding-lr); }
-  .dropdown-menu { width: (@column-width-md * 2) + @column-margin-right-md; margin: 45px 0 20px 0; }
-  .menu-vertical-link-lg { width: (@column-width-md * 4) + (3 * @column-margin-right-md) - (4 * @button-padding-lr); }
-
-  .panel { margin: 0 0 @column-margin-right-md 0; }
-  .panel-1 { width: @column-width-md - (2 * @panel-border-strength); }
-  .panel-2 { width: (@column-width-md * 2) + (1 * @column-margin-right-md) - (2 * @panel-border-strength); }
-  .panel-3 { width: (@column-width-md * 2) + (2 * @column-margin-right-md) - (2 * @panel-border-strength); }
-  .panel-4 { width: (@column-width-md * 2) + (3 * @column-margin-right-md) - (2 * @panel-border-strength); }
-  .panel-5 { width: (@column-width-md * 2) + (4 * @column-margin-right-md) - (2 * @panel-border-strength); }
-  .panel-6 { width: (@column-width-md * 2) + (5 * @column-margin-right-md) - (2 * @panel-border-strength); }
-  .panel-7 { width: (@column-width-md * 2) + (6 * @column-margin-right-md) - (2 * @panel-border-strength); }
-  .panel-8 { width: (@column-width-md * 8) + (7 * @column-margin-right-md) - (2 * @panel-border-strength); }
-  .panel-body { padding: @column-margin-right-md; }
-
-  .screen { padding: 30px; }
-
-  .invite-email { width: 100%; height: @button-height-border; box-sizing: border-box; }
-
-  .form-input { width: 320px; }
-  .form-textarea { width: 312px; }
 }
 
 @media screen and (max-width: 808px) {
-  .page-wrap, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .menu-vertical-link, .panel, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5, .panel-6, .panel-7, .panel-8 { width: 100%; box-sizing: border-box; }
+  .container, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8 { width: 100%; box-sizing: border-box; }
   .col-offset-1, .col-offset-2, .col-offset-3, .col-offset-4, .col-offset-5, .col-offset-6, .col-offset-7 { margin-left: 0; }
-
-  .menu-vertical-link { height: @button-height-border; }
-
-  .form-label { text-align: left; }
-  .form-input { width: 100%; height: @button-height-border; box-sizing: border-box; }
-
-  .header-center { display: none; }
-
-  .screen { padding: 30px; }
-
-  .form-textarea { width: 100%; box-sizing: border-box; }
-
-  .col-full-height { height: 640px; }
-
 }

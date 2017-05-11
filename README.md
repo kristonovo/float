@@ -1,6 +1,6 @@
 # Float
 **UNDER DEVELOPMENT**
-> Float is a simple CSS framework (based on LESS). It's heavily influenced by Twitters Bootstrap. The goal is to develop a much more lightweight framework which is responsive and still highly compatible with older browser-versions.
+> Float is a simple grid framework.
 
 ## Usage
 
@@ -8,14 +8,14 @@ Start customising **variables.less**
 
 ***
 
-### Page
+### Container
 
-If you want to center your page horizontally you can use the page-wrap class.
+If you want to center your content horizontally you can use the container class.
 
-#### .page-wrap
+#### .container
 ```html
 <body>
-    <div class="page-wrap">
+    <div class="container">
         ...
     </div>
 </body>
