@@ -24,28 +24,28 @@ If you want to center your content horizontally you can use the container class.
 
 ### Grid
 
-The Grid is a simple 8-column-based setup. You can combine different classes to adjust your layout. Use ```.col-last``` for end column.
+The grid is a simple 12-column-based setup. You can combine different classes to adjust your layout. Use ```.col-last``` for the last column.
 
 ***
 
 ### Layout examples:
 
 ```    
-| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |   
+| 4 | 8 |   
 ```
 
 ```html
-<div class="col-1">{{ 1 }}</div><div class="col-1">{{ 1 }}</div><div class="col-1">{{ 1 }}</div><div class="col-1">{{ 1 }}</div><div class="col-1">{{ 1 }}</div><div class="col-1">{{ 1 }}</div><div class="col-1">{{ 1 }}</div><div class="col-1 col-last">{{ 1 }}</div>
+<div class="col-4">{{ 4 }}</div><div class="col-8 col-last">{{ 8 }}</div>
 ```
 
 *** 
 
 ```    
-| 2 |  4  | 2 |  
+| 3 |  6  | 3 |  
 ```
 
 ```html
-<div class="col-2">{{ 2 }}</div><div class="col-4">{{ 4 }}</div><div class="col-2 col-last">{{ 2 }}</div>
+<div class="col-3">{{ 3 }}</div><div class="col-6">{{ 6 }}</div><div class="col-3 col-last">{{ 3 }}</div>
 ```
 
 ***
