@@ -8,17 +8,15 @@ Start customising **variables.less**
 
 ***
 
-### Container
+### Container class
 
-If you want to center your content horizontally you can use the container class.
+To center the content horizontally you can use the grid class.
 
-#### .container
+#### .grid
 ```html
-<body>
-    <div class="container">
-        ...
-    </div>
-</body>
+<div class="grid">
+    ...
+</div>
 ```
 ***
 
@@ -31,11 +29,13 @@ The grid is a simple 12-column-based setup. You can combine different classes to
 ### Layout examples:
 
 ```    
-| 4 | 8 |   
+| 4 |   8   |   
 ```
 
 ```html
-<div class="col-4">{{ 4 }}</div><div class="col-8 col-last">{{ 8 }}</div>
+<div class="grid">
+    <div class="col-4">{{ 4 }}</div><div class="col-8 col-last">{{ 8 }}</div>
+</div>
 ```
 
 *** 
@@ -45,7 +45,9 @@ The grid is a simple 12-column-based setup. You can combine different classes to
 ```
 
 ```html
-<div class="col-3">{{ 3 }}</div><div class="col-6">{{ 6 }}</div><div class="col-3 col-last">{{ 3 }}</div>
+<div class="grid">
+    <div class="col-3">{{ 3 }}</div><div class="col-6">{{ 6 }}</div><div class="col-3 col-last">{{ 3 }}</div>
+</div>
 ```
 
 ***
